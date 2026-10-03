@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yasmine Idrissi — AI Student Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-mark">y.idrissi</a>
+    <nav class="nav-links">
+      <a href="#about">about</a>
+      <a href="#skills">stack</a>
+      <a href="#projects">runs</a>
+      <a href="#timeline">log</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">AI engineering student — model.train()</p>
+      <h1 class="hero-name" id="hero-name" aria-label="Yasmine Idrissi">
+        <span class="word" data-word="Yasmine">
+          <span class="letter">Y</span><span class="letter">a</span><span class="letter">s</span><span class="letter">m</span><span class="letter">i</span><span class="letter">n</span><span class="letter">e</span>
+        </span>
+        <span class="word" data-word="Idrissi">
+          <span class="letter">I</span><span class="letter">d</span><span class="letter">r</span><span class="letter">i</span><span class="letter">s</span><span class="letter">s</span><span class="letter">i</span>
+        </span>
+      </h1>
+      <p class="hero-sub">I build small models that get a little less wrong, one epoch at a time.</p>
+      <div class="hero-meta">
+        <span class="epoch-counter" id="epochCounter">epoch 000 · loss 1.000</span>
+        <span class="hero-status">— converged ✓</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">See the runs</a>
+        <a href="#contact" class="btn-ghost">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="section-head">
+      <span class="section-label">// about</span>
+      <h2>Currently training on real problems.</h2>
+    </div>
+    <div class="about-grid">
+      <p class="about-lead">
+        I'm a second-year AI engineering student, more interested in why a model fails than in how good its demo looks.
+        Most of what's below started as a coursework exercise and turned into something I kept tinkering with after the deadline.
+      </p>
+      <dl class="about-facts">
+        <div class="fact">
+          <dt>focus</dt>
+          <dd>Machine learning &amp; data fundamentals</dd>
+        </div>
+        <div class="fact">
+          <dt>based in</dt>
+          <dd>Casablanca, Morocco</dd>
+        </div>
+        <div class="fact">
+          <dt>currently</dt>
+          <dd>Year 2, AI Engineering</dd>
+        </div>
+        <div class="fact">
+          <dt>looking for</dt>
+          <dd>Internships &amp; collab projects</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <div class="section-head">
+      <span class="section-label">// stack</span>
+      <h2>What's in the weight matrix.</h2>
+    </div>
+
+    <div class="matrix">
+      <div class="matrix-row" style="--fill: 85%">
+        <span class="matrix-label">Python</span>
+        <span class="matrix-bar"><span class="matrix-fill"></span></span>
+        <span class="matrix-val">0.85</span>
+      </div>
+      <div class="matrix-row" style="--fill: 70%">
+        <span class="matrix-label">NumPy / Pandas</span>
+        <span class="matrix-bar"><span class="matrix-fill"></span></span>
+        <span class="matrix-val">0.70</span>
+      </div>
+      <div class="matrix-row" style="--fill: 65%">
+        <span class="matrix-label">Scikit-learn</span>
+        <span class="matrix-bar"><span class="matrix-fill"></span></span>
+        <span class="matrix-val">0.65</span>
+      </div>
+      <div class="matrix-row" style="--fill: 55%">
+        <span class="matrix-label">TensorFlow / Keras</span>
+        <span class="matrix-bar"><span class="matrix-fill"></span></span>
+        <span class="matrix-val">0.55</span>
+      </div>
+      <div class="matrix-row" style="--fill: 40%">
+        <span class="matrix-label">SQL</span>
+        <span class="matrix-bar"><span class="matrix-fill"></span></span>
+        <span class="matrix-val">0.40</span>
+      </div>
+      <div class="matrix-row" style="--fill: 30%">
+        <span class="matrix-label">PyTorch</span>
+        <span class="matrix-bar"><span class="matrix-fill"></span></span>
+        <span class="matrix-val">0.30</span>
+      </div>
+    </div>
+    <p class="matrix-note">scores are self-rated confidence, not benchmark accuracy — still training.</p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="section-head">
+      <span class="section-label">// runs</span>
+      <h2>Training runs worth showing.</h2>
+    </div>
+
+    <div class="run-list">
+
+      <article class="run-card">
+        <div class="run-card-head">
+          <span class="run-status status-done">done</span>
+          <h3>Handwritten Digit Classifier</h3>
+        </div>
+        <p class="run-desc">A CNN trained on MNIST to recognize handwritten digits — my first model that actually felt like "AI" instead of statistics homework.</p>
+        <div class="run-meta">
+          <span class="tag">Python</span>
+          <span class="tag">TensorFlow</span>
+          <span class="tag">CNN</span>
+        </div>
+        <svg class="sparkline" viewBox="0 0 200 40" preserveAspectRatio="none">
+          <polyline points="0,8 20,14 40,18 60,22 80,25 100,28 120,30 140,32 160,33 180,34 200,34" />
+        </svg>
+        <a href="#" class="run-link">view code →</a>
+      </article>
+
+      <article class="run-card">
+        <div class="run-card-head">
+          <span class="run-status status-done">done</span>
+          <h3>House Price Predictor</h3>
+        </div>
+        <p class="run-desc">Regression model estimating housing prices from a Kaggle dataset. Where I actually learned what overfitting feels like.</p>
+        <div class="run-meta">
+          <span class="tag">Pandas</span>
+          <span class="tag">Scikit-learn</span>
+          <span class="tag">Regression</span>
+        </div>
+        <svg class="sparkline" viewBox="0 0 200 40" preserveAspectRatio="none">
+          <polyline points="0,10 20,16 40,12 60,20 80,24 100,22 120,27 140,29 160,30 180,31 200,30" />
+        </svg>
+        <a href="#" class="run-link">view code →</a>
+      </article>
+
+      <article class="run-card">
+        <div class="run-card-head">
+          <span class="run-status status-progress">running</span>
+          <h3>Movie Review Sentiment</h3>
+        </div>
+        <p class="run-desc">NLP classifier sorting movie reviews into positive / negative. Currently fighting with tokenization edge cases.</p>
+        <div class="run-meta">
+          <span class="tag">NLP</span>
+          <span class="tag">Keras</span>
+          <span class="tag">In progress</span>
+        </div>
+        <svg class="sparkline" viewBox="0 0 200 40" preserveAspectRatio="none">
+          <polyline points="0,6 20,11 40,9 60,15 80,12 100,17 120,15 140,19 160,16 180,18 200,15" />
+        </svg>
+        <a href="#" class="run-link">view code →</a>
+      </article>
+
+      <article class="run-card">
+        <div class="run-card-head">
+          <span class="run-status status-planned">queued</span>
+          <h3>Study Buddy Chatbot</h3>
+        </div>
+        <p class="run-desc">A small rule-based + retrieval chatbot to quiz myself on lecture notes. Planning phase — dataset not built yet.</p>
+        <div class="run-meta">
+          <span class="tag">Chatbot</span>
+          <span class="tag">Retrieval</span>
+          <span class="tag">Planned</span>
+        </div>
+        <svg class="sparkline" viewBox="0 0 200 40" preserveAspectRatio="none">
+          <polyline points="0,20 200,20" stroke-dasharray="4 4" />
+        </svg>
+        <a href="#" class="run-link run-link-disabled">not started</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- TIMELINE / LOG -->
+  <section class="timeline" id="timeline">
+    <div class="section-head">
+      <span class="section-label">// log</span>
+      <h2>Training log.</h2>
+    </div>
+
+    <ol class="log">
+      <li class="log-entry">
+        <span class="log-time">2024 — sem 1</span>
+        <p>Started AI engineering program. First contact with Python, and with how much math "AI" actually involves.</p>
+      </li>
+      <li class="log-entry">
+        <span class="log-time">2024 — sem 2</span>
+        <p>Learned NumPy and Pandas properly. Built first real dataset-cleaning pipeline — and broke it a dozen times.</p>
+      </li>
+      <li class="log-entry">
+        <span class="log-time">2025 — sem 1</span>
+        <p>Intro to ML: regression, classification, scikit-learn. Shipped the house price predictor.</p>
+      </li>
+      <li class="log-entry">
+        <span class="log-time">2025 — sem 2</span>
+        <p>Neural networks &amp; deep learning intro. Trained my first CNN on MNIST — finally felt like "AI."</p>
+      </li>
+      <li class="log-entry log-entry-current">
+        <span class="log-time">2026 — now</span>
+        <p>Diving into NLP and exploring PyTorch. Looking for an internship to apply this outside the classroom.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <span class="section-label">// contact</span>
+      <h2>Let's talk models, internships, or anything in between.</h2>
+      <div class="contact-links">
+        <a href="mailto:yasmine.idrissi@example.com" class="contact-link">
+          <span class="contact-label">email</span>
+          <span class="contact-value">yasmine.idrissi@example.com</span>
+        </a>
+        <a href="https://github.com/" class="contact-link">
+          <span class="contact-label">github</span>
+          <span class="contact-value">@yasmine-idrissi</span>
+        </a>
+        <a href="https://linkedin.com/" class="contact-link">
+          <span class="contact-label">linkedin</span>
+          <span class="contact-value">/in/yasmine-idrissi</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>built from scratch with HTML &amp; CSS — no framework, just patience.</p>
+</footer>
+
+<!-- Load local page behavior script -->
+<script src="script.js"></script>
+</body>
+</html>
